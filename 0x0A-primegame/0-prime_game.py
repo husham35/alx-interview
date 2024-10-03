@@ -19,22 +19,22 @@ def generate_primes(n):
 
 def count_primes(sieve, n):
     """
-	Count the number of primes less than or equal to n.
-	"""
+    Count the number of primes less than or equal to n.
+    """
     return sum(sieve[:n+1])
 
 def determine_winner(marias_wins, bens_wins):
     """
-	Determine the winner based on the number of wins.
-	"""
+    Determine the winner based on the number of wins.
+    """
     if marias_wins == bens_wins:
         return None
     return 'Maria' if marias_wins > bens_wins else 'Ben'
 
 def isWinner(x, nums):
     """
-	Determines the winner of a prime game session with `x` rounds.
-	"""
+    Determines the winner of a prime game session with `x` rounds.
+    """
     if x < 1 or not nums:
         return None
 
