@@ -3,6 +3,7 @@
 Prime game module.
 """
 
+
 def generate_primes(n):
     """
     Generate a list of prime numbers up to n using the Sieve of Eratosthenes.
@@ -17,11 +18,13 @@ def generate_primes(n):
 
     return sieve
 
+
 def count_primes(sieve, n):
     """
     Count the number of primes less than or equal to n.
     """
     return sum(sieve[:n+1])
+
 
 def determine_winner(marias_wins, bens_wins):
     """
@@ -30,6 +33,7 @@ def determine_winner(marias_wins, bens_wins):
     if marias_wins == bens_wins:
         return None
     return 'Maria' if marias_wins > bens_wins else 'Ben'
+
 
 def isWinner(x, nums):
     """
